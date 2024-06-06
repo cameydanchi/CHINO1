@@ -288,10 +288,10 @@ header {
     row-gap: 40px;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px 120px 0px;
+    padding: 100px 0px;
 }
 
-.grid-contaner {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -299,8 +299,8 @@ header {
 }
 
 .grid-container img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -308,16 +308,16 @@ header {
 .group1 {
     grid-row-start: 1;
     grid-row-end: 3;
-    height: 520px;
+    height: 400px;
 }
 
 .group2{
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 250px;
+    height: 200px;
 }
 .group3{
-    height: 250px;
+    height: 200px;
 }
 
 .pp{
@@ -386,5 +386,5 @@ header {
     width: 300px ;
     height: 40px;
     border-radius: 10px;
-    border-color: ;
+   
 }

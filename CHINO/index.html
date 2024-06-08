@@ -10,6 +10,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -47,7 +49,7 @@
                 <span id="subtext-one" class="Courgette-regular">Welcome to</span>
                 <span id="subtext-two" class="Poppins-bold">Kooqs</span>
             </header>
-            <button class="menu-button">look menu</button>
+            <button class="menu-button">Check out our menu</button>
         </div>
 
     </section>
@@ -88,8 +90,6 @@
                 <div class="pp">
                     <img src="./assets/images/pexels-px7space-15421199.jpg" alt="" class="move">
                 </div>
-                <!-- <img src="./assets/images/baa.jpg" alt="" class="move"> -->
-
                 <p> Romantic Restuarant</p>
                 <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
                 <div>
@@ -104,7 +104,6 @@
                     <img src="./assets/images/pexels-senuscape-728360-2313686.jpg" alt="" class="move">
 
                 </div>
-                <!-- <img src="./assets/images/hero.jpg" alt="" class="move"> -->
                 <p> DELICIOUS FOOD</p>
                 <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
                 <div>
@@ -142,21 +141,39 @@
         <div class="grid-container">
             <div class="group1">
                 <img src="./assets/images/lunch.jpg" alt="lunch">
+                <div class="overlay">
+                    <a href="#" class="overlay-link" class="s.9">Lunch</a>
+                </div>
             </div>
             <div class="group1">
                 <img src="./assets/images/dinner.jpg" alt="Dinner">
+                <div class="overlay">
+                    <a href="#" class="overlay-link">dinner</a>
+                </div>
             </div>
             <div class="group3">
                 <img src="./assets/images/drink.jpg" alt="Drink">
+                <div class="overlay">
+                    <a href="#" class="overlay-link">Drink</a>
+                </div>
             </div>
             <div class="group3">
                 <img src="./assets/images/staters.jpg" alt="staters">
+                <div class="overlay">
+                    <a href="#" class="overlay-link">Starters</a>
+                </div>
             </div>
             <div class="group2">
                 <img src="./assets/images/happy hour.jpg" alt="happy hour">
+                <div class="overlay">
+                    <a href="#" class="overlay-link">Happy Hour</a>
+                </div>
             </div>
             <div class="group3">
                 <img src="./assets/images/dessert.jpg" alt="Dessert">
+                <div class="overlay">
+                    <a href="#" class="overlay-link">Dessert</a>
+                </div>
                 
             </div>
         </div>
@@ -176,38 +193,225 @@
         <div class="section1">
             <div class="sub-header">
                 <span class="Courgette-regular">Reservation</span>
-                <span class="Poppins-bold">Book TAbLE</span>
+                <span class="Poppins-bold">BOOK TABLE</span>
             </div>
+            
             <form action="">
                 <div class="input-grid">
-                    <span class="form-item">
+                    <div class="form-item">
                         <label for="date">Date</label>
-                            <input type="date" id="date">
-                    </span>
-                    <span class="form-item">
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-item">
                         <label for="people">Name</label>
-                            <input type="text" id="people">
-                    </span>
-                    <span class="form-item">
+                        <input type="text" id="people" required>
+                    </div>
+                    <div class="form-item">
                         <label for="time">Time</label>
-                            <input type="time" id="time">
-                    </span>
-                    <span class="form-item">
-                        <label for="phone">phone</label>
-                            <input type="number" id="phone">
-                    </span>
-                    <span class="form-item">
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="people">People</label>
+                        <input type="email" id="people" required>
+                    </div>
+                    <div class="form-item">
                         <label for="email">Email</label>
-                            <input type="email" id="email">
-                    </span>
+                        <input type="email" id="email" required>
+                    </div>
                 </div>
-                <button>Book Table</button>
+                <button type="submit">Book Table</button>
             </form>
         </div>
-        <img src="./assets/images/flex-imge1.jpg" alt="Reservation Image">
+        
+        <div class="section2">
+            <img src="./assets/images/flex-imge1.jpg" alt="Reservation Image">
+        </div>
     </section>
-    <section>Review goes here</section>
-    <section>Footer goes here</section>
+    
+    <section class="swiper mySwiper">  
+        <div class="swiper-style">
+            <span>Customer say</span>
+        <p>Review</p>                    
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                    <img src="./assets/images/dinner.jpg" alt="" class="style">
+                    <p class="e">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</p>
+
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                     <span><i class="fa-solid fa-star"></i></span>
+                     <p class="e">Camey - Tantra hills</p>
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="swiper-slide">
+                    <img src="./assets/images/dinner.jpg" alt="" class="style">
+                    <p class="e">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</p>
+
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                     <span><i class="fa-solid fa-star"></i></span>
+                     <p class="e">Camey - Tantra hills</p>
+
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <img src="./assets/images/dinner.jpg" alt="" class="style">
+                    <p class="e">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</p>
+
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                     <span><i class="fa-solid fa-star"></i></span>
+                     <p class="e">Camey - Tantra hills</p>
+
+            </div>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          
+    </section>
+    <section class="flex-containe">
+        <div class="sub-header">
+            <span class="Courgette-regular">lATEST NEW</span>
+            <span class="Poppins-bold">THE BLOG</span>
+        </div>
+        <div id="img-link">
+        <div class="ll" >
+            <div class="pp">
+                <img src="./assets/images/pexels-px7space-15421199.jpg" alt="" class="move">
+            </div>
+            <p> BEST PLACE FOR WINE</p>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <div class="flex-link">
+                <a href="" >
+                    learn more
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div  class="ll">
+            <div class="pp">
+                <img src="./assets/images/pexels-senuscape-728360-2313686.jpg" alt="" class="move">
+
+            </div>
+            <p> EGG AND CHEESE</p>
+            <p>Phasellus lorem enim, luctus ut velit eget,
+                 con-vallis egestas eros.</p>
+            <div class="flex-link">
+                <a href="">
+                    learn more
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="ll">
+            <div class="pp">
+                <img src="./assets/images/pexels-domeniileblaga-1522594.jpg" alt="" class="move">
+
+            </div>
+            <!-- <img src="./assets/images/about.jpg" alt="" class="move"> -->
+            <p>STYLE THE WEDDING PARTY</p>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <div class="flex-link">
+                <a href="">
+                    learn more
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        </div>
+</section>
+
+
+<footer class="bg1">
+    <div class="main-container">
+        <div class="container2">
+            <div class="contact-section">
+                <h4 class="contact">Contact Us</h4>
+                <ul>
+                    <li class="contlist">
+                        <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        8th floor, 379 Hudson St, New York, NY 10018
+                    </li>
+                    <li class="contlist">
+                        <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        (+1) 96 716 6879
+                    </li>
+                    <li class="contlist">
+                        <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+                        contact@site.com
+                    </li>
+                </ul>
+                <h4 class="contact">Opening Times</h4>
+                <ul>
+                    <li class="contlist">09:30 AM – 11:00 PM</li>
+                    <li class="contlist">Every Day</li>
+                </ul>
+            </div>
+            <div class="latest-twitter-section">
+                <h4 class="contact">Latest Twitter</h4>
+                <div>
+                    <span class="tweet">
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                    <a href="#" class="contlist">@colorlib</a>
+                    <p class="contlist">
+                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <span class="tweet">21 Dec 2024</span>
+                </div>
+                <div>
+                    <span class="tweet">
+                        <i class="fa fa-twitter"></i>
+                    </span>
+                    <a href="#" class="contlist">@colorlib</a>
+                    <p class="contlist">
+                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <span class="tweet">21 Dec 2024</span>
+                </div>
+            </div>
+            <div class="gallery-section">
+                <h4 class="contact">Gallery</h4>
+                <div class="grid">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg" alt="GALLERY">
+                    <img src="./assets/images/dinner.jpg"alt="GALLERY">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 <script>
     window.addEventListener('scroll', function () {
@@ -219,5 +423,6 @@
         }
     });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 </html>

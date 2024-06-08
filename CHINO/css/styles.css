@@ -1,9 +1,14 @@
+/* BODY */
+*{
+    margin: 0;
+}
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    
 }
 
 .Poppins-bold {
@@ -20,6 +25,10 @@ body {
     font-style: normal;
 }
 
+/*
+         THIS IS THE HEADER SECTION 
+         
+*/
 
 #logo {
     width: 150px;
@@ -39,14 +48,14 @@ nav {
     z-index: 1000;
     background: transparent;
     transition: background-color 0.3s ease;
-}
-
- nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0px;
+
 }
+
+ 
 
 
 nav.scrolled {
@@ -94,6 +103,13 @@ nav.scrolled #nav-links i {
     color: #030303;
 }
 
+
+/* 
+        THIS IS THE HERO SECTION 
+        
+*/
+
+
 #hero {
     background-image: url(../assets/images/pexels-allanfranca-3465604.jpg);
     background-size: 100% 100%;
@@ -122,10 +138,12 @@ header {
 
 #subtext-one {
     font-size: 60px;
+    text-transform: uppercase;
 }
 
 #subtext-two {
     font-size: 70px;
+    text-transform: uppercase;
 }
 
 .menu-button {
@@ -141,6 +159,13 @@ header {
 .menu-button:hover {
     background-color: aqua;
 }
+
+
+/* 
+
+        THIS IS THE ABOUT SECTION 
+
+*/
 
 #about {
     display: flex;
@@ -178,7 +203,9 @@ header {
 
 #about-pic:hover {
     transform: scale(1.3);
+    transition: 1s;
 }
+
 
 .sub-header {
     display: flex;
@@ -189,6 +216,7 @@ header {
     height: 100px;
     width: 100%;
     font-size: 30px;
+    justify-content: center;
 }
 
 .Courgette-regular {
@@ -219,6 +247,12 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+/* 
+
+THHE DISCOVER SECTION 
+
+*/
 #discover {
     background-image: url(../assets/images/baa.jpg);
     position: relative;
@@ -249,6 +283,13 @@ header {
     margin-top: 5px;
 }
 
+
+  /* 
+
+  THIS THE FLEXED MENU
+  
+  */
+
 .flex-container {
     margin-top: 0px;
     display: flex;
@@ -257,7 +298,8 @@ header {
     align-items: center;
     margin-left: 100px;
     margin-right: 100px;
-    column-gap: 40px;
+    column-gap: 0px;
+  
 
 }
 
@@ -270,16 +312,47 @@ header {
     
 
 }
+.pp{
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
 
-#flex-link {
+.move:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.move{
+    border-radius: 10px;
+    width: 300px;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+.flex-link  {
     color: black;
     text-decoration: none;
-
+    margin-top: 20px;
+}
+.flex-link a {
+    color: black;
+ 
 }
 
-#flex-link:hover {
+.flex-link a:hover {
     color: red;
 }
+
+
+/* 
+
+   THIS IS THE MENU SECTION 
+
+
+   */
+
 
 #menu-button {
     background-color: #F5F2EC;
@@ -320,22 +393,62 @@ header {
     height: 200px;
 }
 
-.pp{
-    border-radius: 10px;
-    overflow: hidden;
-   
-}
-.move:hover{
+.grid-container img {
+    transition: transform 1s;
+  }
+  
+  .grid-container img:hover {
     transform: scale(1.1);
+  }
+  .grid-container div {
+    overflow: hidden;
+  }
+
+  .group1, .group2, .group3 {
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
-.move{
-    border-radius: 10px;
-    width: 300px;
-    height: 40vh;
-    object-fit: cover;
-    
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    background-color: rgba(253, 248, 248, 0.5);
+    border-radius: 15px;
 }
+.overlay a{
+    color: #0a0909;
+    font-size: 20px;
+   
+}
+
+.overlay-link {
+    color: #fff; 
+    
+   
+    text-decoration: none;
+}
+
+.overlay:hover{
+    background-color: red;
+} 
+
+.overlay-link:hover{
+    background-color: red;
+} 
+
+
+
+
+  /* 
+  
+  THIS IS THE VIDEO SECION 
+  
+  
+  */
 
 #video-sec{
     width: 100vw;
@@ -360,31 +473,292 @@ header {
     justify-content: center;
     align-items: center;
 }
-#reservation{
-    background-color: #EFEFEF;
-    padding: 120px;
-    display: flex;
-    justify-content: space-between;
-}
+
+
+/*
+
+THIS IS THE FORM SECTION 
+
+*/
 #reservation img{
-    width: 40%;
+    width: 80%;
     border-radius: 10px;
     gap: 20px;
 }
-#input-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 25px;
+
+#reservation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #EFEFEF;
 }
 
-.form-item{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+.section1 {
+    flex: 1;
+    padding-right: 20px;
 }
-#input-grid input{
-    width: 300px ;
-    height: 40px;
-    border-radius: 10px;
+
+.section2 {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 7px;
+   
    
 }
+.section2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section2 img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.sub-header{
+    margin-top: 70px;
+}
+
+/* Form styles */
+form {
+    width: 400px;
+    margin-top: 50px ;
+    text-align: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.input-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.form-item {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    background-color: #030303;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff2b06;
+}
+
+
+/*
+ REVIEW SECTION 
+ */
+
+ .review p{
+  text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+ }
+
+ /* lfs */
+ .flex-containe {
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;}
+#img-link{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.ll{
+    padding-right: 30px;
+    margin-top: 30px;
+}
+.ll p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* 
+THIS IS THE SWIPER SECTION
+
+*/
+.swiper-style{
+    color: #220505;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px
+  
+}
+.swiper-pagination{
+
+    margin-bottom:180px;
+}
+/* .swiper-style{
+    background-color: #030303;
+} */
+.swiper-style span{
+    color: red;
+    font-family: 'Courgette';
+}
+.swiper-style p{
+    font-weight: 1000;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    letter-spacing: 17px;
+}
+.swiper-slide span{
+    color: #ff2b06;
+}
+
+
+.swiper-slide .style{
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid red;
+    margin: 100px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center ;
+
+}
+
+.swiper-slide .e{
+ text-transform: uppercase;
+ padding: 20px ;
+}
+
+
+/* THIS IS THE FOOTER */
+
+
+h4 {
+    margin: 0 0 20px 0; /* Increase space between header and content */
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bg1 {
+    background-color: #222222;
+    padding: 60px 0;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-section, .latest-twitter-section, .gallery-section {
+    flex: 1 1 calc(33.33% - 30px); /* Adjust width for better layout */
+    margin: 15px;
+}
+
+.contact {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px; /* Increase space between heading and content */
+}
+
+.contlist {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.contact-section ul li:nth-child(3) {
+    margin-bottom: 30px; /* Increase space between contact content and opening times header */
+}
+
+.tweet {
+    margin-right: 5px;
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.tweet + span, .tweet + a {
+    margin-left: 5px; /* Add space after tweet icon */
+}
+
+.grid {
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    column-gap: -15px; /* Reduce the column gap between images */
+    row-gap: 1px; /* Adjust the row gap */
+}
+
+.grid img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+  
